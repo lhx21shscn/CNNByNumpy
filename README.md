@@ -1,21 +1,27 @@
 # CNNByNumpy
 **包名：DWings == Deep Wings** ~~模仿Tensor+flow，Py+Torch~~
 
-在DWings包下实现了：
+### 在DWings包下实现了：
 
-Module：
+**Module：**
+
 1. 激活函数：Relu，Sigmoid，HardSigmoid，Tanh
 2. 层：全连接层Linear，卷积层Conv2D，池化层：Maxpooling/Meanpooling, Softmax分类层（集成在交叉熵损失函数中），
 3. 其他：随机失活Dropout，变形：transform，所有层的父类：Module，集成的网络结构：QSNet（QuicklyStartNet）
-Optim：
+
+**Optim：**
+
 1. SGD
 2. Adam
-functional: 各种激活函数，对应层的正向传播过程会调用这里定义的函数。
-parameter: 包装numpy.ndarray数组，功能和Pytorch的Parameter类似，为梯度建立存储空间。
-loss: MSELoss\CrossEntropyLoss损失函数
 
-在Test包下实现了：
-1. MLP结构如下：
+**functional:** 各种激活函数，对应层的正向传播过程会调用这里定义的函数。
+
+**parameter:** 包装numpy.ndarray数组，功能和Pytorch的Parameter类似，为梯度建立存储空间。
+
+**loss:** MSELoss\CrossEntropyLoss损失函数
+
+### 在Test包下实现了：
+1. **MLP结构如下：**
 
    ~~~
     config = [
@@ -30,7 +36,7 @@ loss: MSELoss\CrossEntropyLoss损失函数
     ~~~
 
 
-2. CNN 结构如下：
+2. **CNN 结构如下：**
     
     ~~~
     config = [
