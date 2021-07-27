@@ -1,7 +1,8 @@
 # CNNByNumpy
 **包名：DWings == Deep Wings** ~~模仿Tensor+flow，Py+Torch~~
 
-在DWings包下实现了： 
+在DWings包下实现了：
+
 Module：
 1. 激活函数：Relu，Sigmoid，HardSigmoid，Tanh
 2. 层：全连接层Linear，卷积层Conv2D，池化层：Maxpooling/Meanpooling, Softmax分类层（集成在交叉熵损失函数中），
